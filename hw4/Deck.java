@@ -1,8 +1,3 @@
-//DO NOT REMOVE PACKAGE LINE
-//Without this line authograder will not run correctly
-//You can comment it while you work on the problem
-//When everything works - uncomment and submit!
-//package com.gradescope.hw4;
 
 
 
@@ -17,7 +12,6 @@ public class Deck implements Iterable<Card> { //make implements Iterable<Card>
     //Default constructor that generates a full list of card in specific order
     //top [A♥, 2♥,..., K♥, A♦, ..., K♦, A♣, ..., K♣, A♠, ..., K♠] last
     public Deck(){
-        //put your code here
         //default constructor builds a standard deck with a base of suits and ranks
         this.top = null;
         this.last = null;
@@ -53,7 +47,6 @@ public class Deck implements Iterable<Card> { //make implements Iterable<Card>
     }
     //Constractor requires array of cards
     public Deck(Card[] arr){
-        //put your code here
         this.top = null;
         this.last = null;
         this.size = 0;
@@ -85,7 +78,6 @@ public class Deck implements Iterable<Card> { //make implements Iterable<Card>
 
     }
     //Add getters
-    //put your code here
     //getters to get the fields, needed later in the iterators
     public int size(){
         return this.size;
@@ -112,7 +104,6 @@ public class Deck implements Iterable<Card> { //make implements Iterable<Card>
             }
             ans += "]";
         }
-        //put your code here
         return ans;
     }
     //add default iterator (don't forget to add implements to class, if needed)
